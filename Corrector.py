@@ -1,11 +1,10 @@
 from tkinter import * 
 from tkinter.ttk import *
 from tkinter import messagebox
-import language_check
-from textblob import TextBlob
-
 #pip install language-check
 #pip install textblob
+import language_check
+from textblob import TextBlob
 
 
 def root():
