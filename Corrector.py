@@ -135,7 +135,6 @@ def lol():
     e11.insert(0,fun1)
 
 def rem():
-    messagebox.showinfo("reminder
-تذكير, مذكرة", ''.join('لا تنسى مراجعة دروسك'))
+    messagebox.showinfo("Reminder", ''.join('Revise your lessons'))
 
 root()
