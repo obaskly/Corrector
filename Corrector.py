@@ -1,3 +1,4 @@
+#Changing the code won't make you a coder
 from tkinter import * 
 from tkinter.ttk import *
 from tkinter import messagebox
