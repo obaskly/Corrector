@@ -11,8 +11,8 @@ def root():
     global master
     master = Tk()
     master.resizable(FALSE, FALSE)
-    master.title("اختبر انجليزيتك")
-    #messagebox.showinfo("Notice !", ''.join('All Rights Reserved To Bropocalypse Team'))
+    master.title("Test Your English")
+    messagebox.showinfo("Notice !", ''.join('All Rights Reserved To Bropocalypse Team'))
     
     master.geometry("250x150")
     
@@ -22,10 +22,10 @@ def root():
     label0.pack(pady = 10)
 
     btn0 = Button(master, 
-                text ="اخطاء املائية", 
+                text ="Spelling errors", 
                 command = win1)
     btn2 = Button(master, 
-                text ="اخطاء نحوية", 
+                text ="Grammatical errors", 
                 command = win2)
 
     btn0.pack(pady = 7)
@@ -38,27 +38,27 @@ def root():
 def win1():
     win1 = Toplevel(master)
     win1.resizable(FALSE, FALSE)
-    win1.title("اخطاء املائية")
+    win1.title("Spelling errors")
     win1.geometry("250x150")
     win1.configure(background='black')
     #messagebox.showinfo("Notice !", ''.join('All Rights Reserved To Bropocalypse Team'))
     
     label1 = Label(win1, 
-                text ="نصك :", background='black', foreground="red", font='Helvetica 9')
+                text ="Text :", background='black', foreground="red", font='Helvetica 9')
 
     label22 = Label(win1, 
-                text ="التصحيح :", background='black', foreground="light green", font='Neutra 9')
+                text ="Correction :", background='black', foreground="light green", font='Neutra 9')
                 
     global e01, e10
     e01  = Entry(win1, width=25)
     e10  = Entry(win1, width=25)
 
     btn01 = Button(win1, 
-                text ="تصحيح", 
+                text ="Correct", 
                 command = take)
 
     btn20 = Button(win1, 
-                text ="خروج", 
+                text ="Exit", 
                 command = win1.destroy)
 
     label1.place(x=31, y=25)
@@ -75,27 +75,27 @@ def win1():
 def win2():
     win2 = Toplevel(master)
     win2.resizable(FALSE, FALSE)
-    win2.title("اخطاء نحوية")
+    win2.title("Grammatical errors")
     win2.geometry("250x150")
     win2.configure(background='black')
     #messagebox.showinfo("Notice !", ''.join('All Rights Reserved To Bropocalypse Team'))
     
     label15 = Label(win2, 
-                text ="نصك :", background='black', foreground="red", font='Helvetica 9')
+                text ="Text :", background='black', foreground="red", font='Helvetica 9')
 
     label23 = Label(win2, 
-                text ="التصحيح :", background='black', foreground="light green", font='Neutra 9')
+                text ="Correction :", background='black', foreground="light green", font='Neutra 9')
                 
     global e00, e11
     e00  = Entry(win2, width=25)
     e11  = Entry(win2, width=25)
 
     btn7 = Button(win2, 
-                text ="تصحيح", 
+                text ="Correct", 
                 command = lol)
 
     btn8 = Button(win2, 
-                text ="خروج", 
+                text ="Exit", 
                 command = win2.destroy)
 
     label15.place(x=31, y=25)
@@ -135,6 +135,7 @@ def lol():
     e11.insert(0,fun1)
 
 def rem():
-    messagebox.showinfo("تذكير", ''.join('لا تنسى مراجعة دروسك'))
+    messagebox.showinfo("reminder
+تذكير, مذكرة", ''.join('لا تنسى مراجعة دروسك'))
 
 root()
