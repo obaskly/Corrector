@@ -2,8 +2,6 @@
 from tkinter import * 
 from tkinter.ttk import *
 from tkinter import messagebox
-#pip install language-check
-#pip install textblob
 import language_check
 from textblob import TextBlob
 
