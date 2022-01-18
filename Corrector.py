@@ -32,6 +32,7 @@ def root():
     Quit = Button(master, text="Quit", command= lambda:[rem(), master.destroy()])
     Quit.place(x=0, y=125)
 
+    
     mainloop()
 
 def win1():
